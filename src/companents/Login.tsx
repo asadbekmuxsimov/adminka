@@ -19,12 +19,12 @@ function LoginPage() {
       const delay = Math.random() * 10;  
       const left = Math.random() * 100;  
       const borderRadius = Math.random() > 0.7 ? '50%' : `${Math.random() * 30 + 10}px`;  
-
+ 
       element.style.width = `${size}px`;  
       element.style.height = `${size}px`;  
       element.style.background = color;  
       element.style.animationDuration = `${duration}s`;  
-      element.style.animationDelay = `${delay}s`;  
+      element.style.animationDelay = `${delay}s`;   
       element.style.left = `${left}%`;  
       element.style.borderRadius = borderRadius;  
       element.style.top = `-${size}px`;  
