@@ -14,7 +14,7 @@ function Catigories() {
 
   const Users = () => {
     api
-      .get("/api/categories?limit=10&page=1&order=ASC")
+      .get("/api/categories")
       .then((res) => {
         setUsers(res.data.items);
       })

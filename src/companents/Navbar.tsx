@@ -34,7 +34,7 @@ function Navbar() {
           <Route path="/banerlar" element={<Banners />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/catigories" element={<Catigories />} />
+          <Route path="/categories" element={<Catigories />} />
         </Routes>
       </div>
     </div>
