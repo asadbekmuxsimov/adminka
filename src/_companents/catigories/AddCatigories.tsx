@@ -1,10 +1,8 @@
 import { Button, Drawer, Form, Input, message } from "antd";
 import api from "../../api/api";
 import { useEffect, useState } from "react";
-import { CatigoriesType } from "../../Type";
 
 function AddCatigories({ isOpenDraver, setOpenDraver }: any) {
-  const [categories, setCategories] = useState<CatigoriesType[]>([]);
   const [loading, setloading] = useState(false);
 
   return (
@@ -34,9 +32,6 @@ function AddCatigories({ isOpenDraver, setOpenDraver }: any) {
             useEffect(() => {
               api
                 .get("/api/categories")
-                .then((res) => {
-                  setCategories(res.data.items);
-                })
                 .catch((err) => {
                   console.error("Kategoriyalarni yuklashda xatolik:", err);
                   message.error("Kategoriyalarni yuklashda xatolik 😒");
