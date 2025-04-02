@@ -7,30 +7,6 @@ function LoginPage() {
   const [loading, setLoading] = useState(false);  
 
   useEffect(() => {  
-    // const container = document.querySelector('.animation-container');  
-    // const colors = ['#ff4d4f', '#40a9ff', '#a0d911', '#faad14', '#2f54eb'];  
-
-    // for (let i = 0; i < 20; i++) {  
-    //   const element = document.createElement('div');  
-    //   element.className = 'floating-element';  
-    //   const size = Math.random() * 60 + 30;  
-    //   const color = colors[Math.floor(Math.random() * colors.length)];  
-    //   const duration = Math.random() * 15 + 10;  
-    //   const delay = Math.random() * 10;  
-    //   const left = Math.random() * 100;  
-    //   const borderRadius = Math.random() > 0.7 ? '50%' : `${Math.random() * 30 + 10}px`;  
- 
-    //   element.style.width = `${size}px`;  
-    //   element.style.height = `${size}px`;  
-    //   element.style.background = color;  
-    //   element.style.animationDuration = `${duration}s`;  
-    //   element.style.animationDelay = `${delay}s`;   
-    //   element.style.left = `${left}%`;  
-    //   element.style.borderRadius = borderRadius;  
-    //   element.style.top = `-${size}px`;  
-
-    //   container?.appendChild(element);  
-    // }  
 
     return () => {  
       const elements = document.querySelectorAll('.floating-element');  
