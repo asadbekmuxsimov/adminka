@@ -10,8 +10,8 @@ function Banners() {
   const [banners, setBanners] = useState<BanersType[]>([]);
 
   const fetchBanners = () => {
-   api
-      .get("/api/banners?limit=10&page=1&order=ASC")
+    api
+      .get("/api/banners")
       .then((res) => {
         setBanners(res.data.items);
         message.success("Banners Page 😊");

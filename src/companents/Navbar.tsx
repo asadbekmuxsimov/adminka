@@ -20,8 +20,8 @@ function Navbar() {
           />
           
           <div className="text-sm">
-            <p className="font-medium">Ozoedbk</p>
-            <p className="text-xs">ID: 123</p>
+            <p className="font-medium">Asadbek</p>
+            <p className="text-xs">ID: 12345</p>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ function Navbar() {
       <div className="p-4">
         <Routes>
           <Route path="/user" element={<User />} />
-          <Route path="/banerlar" element={<Banners />} />
+          <Route path="/banners" element={<Banners />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/products" element={<Products />} />
           <Route path="/categories" element={<Catigories />} />
